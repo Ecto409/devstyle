@@ -13,7 +13,7 @@
 <body>
 
     <!-- La navbar, avec un container small -->
-    <div class="uk-navbar-container tm-navbar-container">
+    <div class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed uk-active">
         <div class="uk-container uk-container-small">
             <nav class="uk-navbar">
                 <div class="uk-navbar-left">
@@ -26,6 +26,7 @@
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
                         <li class="uk-active"><a href="file:///Users/Developpement/Desktop/Devstyle/index.html">Accueil</a></li>
+                        <li><a href="http://brackets.io">Brackets</a></li>
                         <li><a href="https://github.com/Ecto409" target="_blank">Github</a></li>
                         <li><a href="https://getuikit.com/docs/introduction" target="_blank">UIkit</a></li>
                         <li><a href="http://localhost:8888/" target="_blank">PHP</a></li>
@@ -48,9 +49,10 @@
         <div uk-grid class="uk-margin-large-bottom uk-margin-large-top">
             <div class="uk-width-1-4@m">
                 <div class="tm-sidebar-left uk-visible@l">
-                    <div uk-sticky="offset: 40" class="uk-sticky uk-sticky-fixed uk-active" style="position: fixed; top: 330px; width: 200px;">
+                    <div uk-sticky="offset: 140" class="uk-sticky uk-sticky-fixed uk-active" style="position: fixed; top: 140px; width: 200px;">
                         <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 120" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
                             <p class="uk-text-lead">Navigation</p>
+                            <li class="uk-active"><a href="#outils">Outils</a></li>
                             <li class="uk-active"><a href="#avant-propos">Avant-propos</a></li>
                             <li class=""><a href="#prochaines-etapes">Prochaines étapes</a></li>
                         </ul>
@@ -58,9 +60,35 @@
                     <div class="uk-sticky-placeholder" style="height: 387px; margin: 0px;"></div>
                 </div>
             </div>
-            <div class="uk-width-expand@m ">
+            <div class="uk-width-expand@m uk-margin-large-top">
+                <h1 class="uk-text-large uk-heading-divider" id="outils">Outils</h1>
+                <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-padding-medium-bottom" uk-grid>
+
+                    <div>
+                        <a href="http://brackets.io" target="_blank">
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-background-primary uk-light"><span uk-icon="icon: desktop; ratio: 1" class="uk-icon uk-margin-small-bottom"></span><br>Brackets</div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="http://localhost:8888/phpMyAdmin/" target="_blank">
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-background-primary uk-light"><span uk-icon="icon: database; ratio: 1" class="uk-icon uk-margin-small-bottom"></span><br>PhpMyAdmin</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://getuikit.com/docs/introduction" target="_blank">
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-background-primary uk-light"><span uk-icon="icon: uikit; ratio: 1" class="uk-icon uk-margin-small-bottom"></span><br>UIKit</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/Ecto409" target="_blank">
+                            <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-background-primary uk-light"><span uk-icon="icon: github; ratio: 1" class="uk-icon uk-margin-small-bottom"></span><br>Github</div>
+                        </a>
+                    </div>
+
+                </div>
                 <h1 class="uk-text-large uk-heading-divider" id="avant-propos">Avant-propos</h1>
-                <p>Cette plateforme a pour but de rassembler en un point central tous les liens et toutes les ressources nécessaire à l'introduction au développement, en couvrant plusieurs language et outils. Elle est basée sur le style appliqué au site d'Apple et dédié aux développeurs.</p>
+                <div class="uk-padding-medium-bottom">Cette plateforme a pour but de rassembler en un point central tous les liens et toutes les ressources nécessaire à l'introduction au développement, en couvrant plusieurs language et outils. Elle est basée sur le style appliqué au site d'Apple et dédié aux développeurs.</div>
                 <h1 class="uk-text-large uk-heading-divider" id="prochaines-etapes">Prochaines étapes</h1>
                 <table class="uk-table uk-table-hover uk-table-middle">
                     <thead>
