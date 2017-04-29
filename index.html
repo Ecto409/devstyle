@@ -40,28 +40,27 @@
 
 
     <!-- Le contenu, avec une margin avant -->
-    <div class="uk-container uk-container-small uk-margin-large-top">
+    <div class="uk-container uk-container-small uk-margin-large-top uk-margin-large-bottom">
         <div uk-grid>
             <div class="uk-width-1-4@m">
                 <div class="tm-sidebar-left uk-visible@l">
                     <div uk-sticky="offset: 122" class="uk-sticky uk-sticky-fixed uk-active" style="position: fixed; top: 122px; width: 200px;">
                         <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 120" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
-                            <li class="uk-active"><a href="#1">Style modifiers</a></li>
-                            <li class=""><a href="#2">Font size</a></li>
-                            <li class=""><a href="#font-weight">Font weight</a></li>
-                            <li class=""><a href="#text-transform">Text transform</a></li>
-                            <li class=""><a href="#text-color">Text color</a></li>
-                            <li class=""><a href="#text-background">Text background</a></li>
-                            <li class=""><a href="#text-alignment">Text alignment</a></li>
-                            <li class=""><a href="#text-wrapping">Text wrapping</a></li>
+                            <p class="uk-text-lead">Navigation</p>
+                            <li class="uk-active"><a href="#avant-propos">Avant-propos</a></li>
+                            <li class=""><a href="#prochaines-etapes">Prochaines étapes</a></li>
                         </ul>
                     </div>
                     <div class="uk-sticky-placeholder" style="height: 387px; margin: 0px;"></div>
                 </div>
             </div>
             <div class="uk-width-expand@m ">
-                <h1 class="uk-text-large uk-heading-divider" id="style-modifiers">Contenu</h1>
-                <table class="uk-table uk-table-hover uk-table-middle" id="1">
+                <h1 class="uk-text-large uk-heading-divider" id="avant-propos">Avant-propos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et quam nec mi elementum suscipit. Maecenas metus tortor, sollicitudin ac arcu vel, scelerisque auctor mi. Praesent quis tortor metus. Vivamus id elit scelerisque, scelerisque nulla at, efficitur diam. Aliquam viverra libero sit amet enim pharetra scelerisque. Aliquam vel diam laoreet, vestibulum magna id, dictum nisi. Proin diam ex, fermentum at eleifend non, mattis et ex. Nullam ac ex eu tortor fringilla varius. Donec id tellus arcu. Curabitur posuere ipsum at eleifend sollicitudin. Quisque viverra enim tempus, convallis neque sed, iaculis nunc. In cursus posuere turpis id semper. Aenean nulla purus, iaculis quis consectetur sit amet, maximus vel augue. Quisque elementum enim tortor, vitae efficitur ligula condimentum et. Nullam vitae volutpat arcu, eget porta arcu. Nam scelerisque elit vel dui malesuada euismod. Sed tincidunt porttitor urna, auctor rutrum libero euismod sit amet. Vivamus nec tortor mauris. Etiam at justo sit amet felis maximus vulputate. Integer interdum, diam nec sagittis interdum, lorem metus faucibus ipsum, a sagittis purus purus sed velit. Nullam vulputate tellus non leo lobortis egestas. Nulla at condimentum nisl, et aliquet libero. Nullam venenatis tellus at dignissim tempor. Fusce sed mi eu velit luctus ornare. Nullam felis est, sollicitudin pulvinar facilisis nec, pretium vitae sem. Duis efficitur sodales velit nec suscipit. Mauris gravida iaculis egestas. Nullam accumsan felis non fringilla auctor. Sed odio lectus, volutpat ut tortor sit amet, pharetra scelerisque tortor. Phasellus ex ligula, sagittis id sagittis ut, vulputate eget orci. Fusce vulputate volutpat augue, a aliquet arcu semper et. Mauris iaculis turpis lacus, sit amet luctus est sollicitudin mollis. Vestibulum facilisis metus in eros suscipit ullamcorper. Nam sit amet justo ante. Nunc id rutrum lacus. Pellentesque non diam leo. Pellentesque consequat porttitor commodo. Morbi vehicula nec dui at vulputate. Aliquam dui nulla, hendrerit et velit eu, sodales dapibus leo. Nunc pulvinar ullamcorper elit, eget mattis nisi. Mauris pretium quis arcu sed sodales. Nulla posuere nulla velit, vel gravida purus placerat eget. Vivamus finibus dignissim malesuada. Mauris magna sapien, rutrum rutrum hendrerit sit amet, bibendum laoreet purus. Aliquam vestibulum pellentesque varius. Curabitur a imperdiet nulla. Maecenas in ipsum placerat, pretium libero vitae, dictum mauris. Fusce sagittis pellentesque sapien, in mollis arcu dictum a. Pellentesque ullamcorper varius enim quis mattis. Suspendisse ultricies tempor lorem, ut consequat arcu semper ut. Aenean dictum nulla eget nisl euismod, eget semper nunc rhoncus. Fusce leo ligula, euismod sit amet eleifend accumsan, maximus eu mauris. Maecenas sodales ligula vitae elit semper, in euismod felis aliquam. Proin et ultrices libero, non vulputate metus. Aliquam erat volutpat. Nunc congue, nulla ac imperdiet pretium, sapien enim euismod erat, ut cursus sapien lacus consectetur augue.</p>
+
+
+                <h1 class="uk-text-large uk-heading-divider" id="prochaines-etapes">Prochaines étapes</h1>
+                <table class="uk-table uk-table-hover uk-table-middle">
                     <thead>
                         <tr>
                             <th class="uk-table-small">Sujet</th>
@@ -73,7 +72,7 @@
 
                     <tbody class="uk-text-small uk-sortable" uk-sortable="">
                         <tr>
-                            <td class="uk-text-bold uk-text-uppercase">HTML/CSS</td>
+                            <td class="uk-text-uppercase">HTML/CSS</td>
                             <td class="uk-table-link">
                                 <a class="uk-link-reset" href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3">Apprenez à créer votre site web avec HTML5 et CSS3</a>
                             </td>
@@ -81,7 +80,7 @@
                             <td class="uk-text-success uk-text-right"><span uk-icon="icon: check" class="uk-icon"></span></td>
                         </tr>
                         <tr>
-                            <td class="uk-text-bold uk-text-uppercase">Framework CSS</td>
+                            <td class="uk-text-uppercase">Framework CSS</td>
                             <td class="uk-table-link">
                                 <a class="uk-link-reset" href="https://getuikit.com">UIKit</a>
                             </td>
@@ -89,7 +88,7 @@
                             <td class="uk-text-success uk-text-right"><span uk-icon="icon: check" class="uk-icon"></span></td>
                         </tr>
                         <tr>
-                            <td class="uk-text-bold uk-text-uppercase">php/mysql</td>
+                            <td class="uk-text-uppercase">php/mysql</td>
                             <td class="uk-table-link">
                                 <a class="uk-link-reset" href="https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql">Concevez votre site web avec PHP et MySQL</a>
                             </td>
@@ -97,15 +96,7 @@
                             <td class="uk-text-success uk-text-right"><span uk-icon="icon: check" class="uk-icon"></span></td>
                         </tr>
                         <tr>
-                            <td class="uk-text-bold uk-text-uppercase">php</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/adopter-un-style-de-programmation-clair-avec-le-modele-mvc">Adopter un style de programmation clair avec le modèle MVC</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">Git/Github</td>
+                            <td class="uk-text-uppercase">git/github</td>
                             <td class="uk-table-link">
                                 <a class="uk-link-reset" href="https://openclassrooms.com/courses/gerer-son-code-avec-git-et-github">Gérez votre code avec Git et GitHub</a>
                             </td>
@@ -113,7 +104,15 @@
                             <td class="uk-text-success uk-text-right"><span uk-icon="icon: check" class="uk-icon"></span></td>
                         </tr>
                         <tr>
-                            <td class="uk-text-bold uk-text-uppercase">php</td>
+                            <td class="uk-text-uppercase">php</td>
+                            <td class="uk-table-link">
+                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/adopter-un-style-de-programmation-clair-avec-le-modele-mvc">Adopter un style de programmation clair avec le modèle MVC</a>
+                            </td>
+                            <td class="uk-text">Open Classrooms</td>
+                            <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-uppercase">php</td>
                             <td class="uk-table-link">
                                 <a class="uk-link-reset" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php">Programmez en orienté objet en PHP</a>
                             </td>
@@ -121,7 +120,7 @@
                             <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
                         </tr>
                         <tr>
-                            <td class="uk-text-bold uk-text-uppercase">Framework PHP</td>
+                            <td class="uk-text-uppercase">Framework PHP</td>
                             <td class="uk-table-link">
                                 <a class="uk-link-reset" href="https://openclassrooms.com/courses/developpez-votre-site-web-avec-le-framework-symfony">Développez votre site web avec le framework Symfony</a>
                             </td>
@@ -129,7 +128,7 @@
                             <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
                         </tr>
                         <tr>
-                            <td class="uk-text-bold uk-text-uppercase">JS</td>
+                            <td class="uk-text-uppercase">JS</td>
                             <td class="uk-table-link">
                                 <a class="uk-link-reset" href="https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript">Apprenez à coder avec JavaScript</a>
                             </td>
@@ -137,7 +136,7 @@
                             <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
                         </tr>
                         <tr>
-                            <td class="uk-text-bold uk-text-uppercase">PM</td>
+                            <td class="uk-text-uppercase">PM</td>
                             <td class="uk-table-link">
                                 <a class="uk-link-reset" href="https://openclassrooms.com/courses/gerez-un-projet-digital-avec-une-methodologie-en-cascade">Gérez un projet digital avec une méthodologie en cascade</a>
                             </td>
@@ -147,123 +146,6 @@
                     </tbody>
                 </table>
 
-
-                <h1 class="uk-text-large uk-heading-divider" id="2">Contenu</h1>
-                <table class="uk-table uk-table-hover uk-table-middle" id="2">
-                    <thead>
-                        <tr>
-                            <th class="uk-table-small">Sujet</th>
-                            <th class="uk-table-expand">Description</th>
-                            <th class="uk-table-small">Site</th>
-                            <th class="uk-table-small">Statut</th>
-                        </tr>
-                    </thead>
-
-                    <tbody class="uk-text-small uk-sortable" uk-sortable="">
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">HTML/CSS</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3">Apprenez à créer votre site web avec HTML5 et CSS3</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-success uk-text-right"><span uk-icon="icon: check" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">Framework CSS</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://getuikit.com">UIKit</a>
-                            </td>
-                            <td class="uk-text">UIKit</td>
-                            <td class="uk-text-success uk-text-right"><span uk-icon="icon: check" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">php/mysql</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql">Concevez votre site web avec PHP et MySQL</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-success uk-text-right"><span uk-icon="icon: check" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">php</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/adopter-un-style-de-programmation-clair-avec-le-modele-mvc">Adopter un style de programmation clair avec le modèle MVC</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">Git/Github</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/gerer-son-code-avec-git-et-github">Gérez votre code avec Git et GitHub</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-success uk-text-right"><span uk-icon="icon: check" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">php</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/programmez-en-oriente-objet-en-php">Programmez en orienté objet en PHP</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">Framework PHP</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/developpez-votre-site-web-avec-le-framework-symfony">Développez votre site web avec le framework Symfony</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">JS</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript">Apprenez à coder avec JavaScript</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">PM</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/gerez-un-projet-digital-avec-une-methodologie-en-cascade">Gérez un projet digital avec une méthodologie en cascade</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">JS</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript">Apprenez à coder avec JavaScript</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-bold uk-text-uppercase">PM</td>
-                            <td class="uk-table-link">
-                                <a class="uk-link-reset" href="https://openclassrooms.com/courses/gerez-un-projet-digital-avec-une-methodologie-en-cascade">Gérez un projet digital avec une méthodologie en cascade</a>
-                            </td>
-                            <td class="uk-text">Open Classrooms</td>
-                            <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                            <tr>
-                                <td class="uk-text-bold uk-text-uppercase">JS</td>
-                                <td class="uk-table-link">
-                                    <a class="uk-link-reset" href="https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript">Apprenez à coder avec JavaScript</a>
-                                </td>
-                                <td class="uk-text">Open Classrooms</td>
-                                <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                            </tr>
-                            <tr>
-                                <td class="uk-text-bold uk-text-uppercase">PM</td>
-                                <td class="uk-table-link">
-                                    <a class="uk-link-reset" href="https://openclassrooms.com/courses/gerez-un-projet-digital-avec-une-methodologie-en-cascade">Gérez un projet digital avec une méthodologie en cascade</a>
-                                </td>
-                                <td class="uk-text">Open Classrooms</td>
-                                <td class="uk-text-danger uk-text-right"><span uk-icon="icon: close" class="uk-icon"></span></td>
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>
