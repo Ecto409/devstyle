@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>MyDashboard</title>
+    <title>MyDashboard - Accueil</title>
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/uikit.min.js"></script>
@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    <!-- La navbar, avec un container small -->
     <div class="uk-navbar-container tm-navbar-container">
         <div class="uk-container uk-container-small">
             <nav class="uk-navbar">
@@ -22,12 +24,11 @@
                 </div>
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a>Accueil</a></li>
-                        <li><a href="https://github.com/Ecto409">Github</a></li>
-                        <li><a href="https://getuikit.com/docs/introduction">UIkit</a></li>
-                        <li><a href="http://localhost:8888/">PHP</a></li>
-                        <li><a href="http://localhost:8888/phpMyAdmin/">PhpMyAdmin</a></li>
-
+                        <li class="uk-active"><a href="file:///Users/Developpement/Desktop/Devstyle/index.html">Accueil</a></li>
+                        <li><a href="https://github.com/Ecto409" target="_blank">Github</a></li>
+                        <li><a href="https://getuikit.com/docs/introduction" target="_blank">UIkit</a></li>
+                        <li><a href="http://localhost:8888/" target="_blank">PHP</a></li>
+                        <li><a href="http://localhost:8888/phpMyAdmin/" target="_blank">PhpMyAdmin</a></li>
                         <li><a><span uk-icon="icon: search; ratio: 0.8"></span></a>
                         </li>
                     </ul>
@@ -36,7 +37,20 @@
         </div>
     </div>
 
-    <div class="uk-container uk-container-small uk-margin-large-top">test</div>
+
+    <!-- Le contenu, avec une margin avant -->
+    <div class="uk-container uk-container-small uk-margin-large-top">
+        <div class="tm-sidebar-right uk-visible@l">
+            <div uk-sticky="offset: 160"class="uk-sticky uk-sticky-fixed uk-active" style="position: fixed; top: 160px; width: 200px;">
+                <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 100" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
+                    <li class=""><a href="#usage">Usage</a></li>
+                    <li class=""><a href="#flip-modifier">Flip modifier</a></li>
+                    <li class=""><a href="#animation-modes">Animation modes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>test</div>
+    </div>
 </body>
 
 </html>
