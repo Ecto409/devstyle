@@ -2759,7 +2759,7 @@ select.uk-form-width-xsmall {
 .uk-container {
     box-sizing: content-box;
     /* 1 */
-    max-width: 1200px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -4953,6 +4953,7 @@ ul.uk-nav-sub {
     display: flex;
     /* 1 */
     position: relative;
+    background: rgba(240, 240, 240, 0.9);
 }
 
 
