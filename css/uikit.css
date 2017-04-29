@@ -692,7 +692,7 @@ a.uk-link-reset:focus,
  ========================================================================== */
 
 .uk-heading-primary {
-    font-size: 2.625rem;
+    font-size: 2rem;
     line-height: 1.2;
 }
 
@@ -9569,7 +9569,7 @@ td.uk-text-break {
 }
 
 .uk-background-primary {
-    background-color: #1e87f0;
+    background-color: #38E2B6;
 }
 
 .uk-background-secondary {
@@ -11123,6 +11123,17 @@ td.uk-text-break {
 
 .uk-margin-large-right {
     margin-right: 40px !important;
+}
+
+
+/* Padding large */
+
+.uk-padding-large-top {
+    padding-top: 100px !important;
+}
+
+.uk-padding-large-bottom {
+    padding-bottom: 100px !important;
 }
 
 
