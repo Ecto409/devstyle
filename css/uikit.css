@@ -4964,16 +4964,6 @@ ul.uk-nav-sub {
     background: rgba(240, 240, 240, 0.9);
 }
 
-.uk-navbar-container-inside {
-    box-sizing: content-box;
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: inline;
-}
-
 
 /*
  * Remove pseudo elements created by micro clearfix as precaution (if Container component is used)
@@ -5143,7 +5133,7 @@ ul.uk-nav-sub {
  */
 
 .uk-navbar-nav>li>a {
-    color: #333;
+    color: #000;
     /*text-transform: uppercase;*/
     -webkit-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
