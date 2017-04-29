@@ -21,7 +21,7 @@ html {
     -ms-text-size-adjust: 100%;
     /* 3 */
     background: #fafafa;
-    color: #666;
+    color: #333;
 }
 
 
@@ -31,6 +31,22 @@ html {
 
 body {
     margin: 0;
+}
+
+
+/* Sidebar */
+
+.tm-nav>li.uk-active>a:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -25px;
+    width: 15px;
+    border-top: 1px solid #1e87f0;
+}
+
+.tm-nav>li.uk-active>a {
+    color: red;
 }
 
 
@@ -1118,6 +1134,13 @@ a.uk-link-reset:focus,
 }
 
 
+/* Borders */
+
+.uk-table :not(:last-child)>td {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
 /* Header cell
  ========================================================================== */
 
@@ -1135,6 +1158,7 @@ a.uk-link-reset:focus,
     font-weight: normal;
     color: #999;
     text-transform: uppercase;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 
