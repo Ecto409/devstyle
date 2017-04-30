@@ -42,8 +42,16 @@
 
 
     <!--<div class="uk-padding-large-top uk-padding-large-bottom uk-text-center uk-light uk-heading-primary uk-background-primary">Hello World!</div>-->
-    <!--<div class="uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url( http://img.bfmtv.com/c/1256/708/871/c972cb9dda2850dbf2d5b58ac4445.jpg);">
-        <p class="uk-heading-primary uk-light">Hello World!</p>
+
+    <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url( https://www.apple.com/newsroom/images/live-action/new-store-opening/retail_nso_dubaimall_full.jpg.large_2x.jpg);">
+        <!--<div class="uk-position-bottom-center">
+            <p class="uk-heading-primary uk-light uk-text-bold uk-shadow">Hello World!</p>
+        </div>-->
+    </div>
+
+    <!--<div class="uk-background-primary">
+        <div class="uk-background-cover uk-blend-screen uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url( https://www.apple.com/newsroom/images/live-action/new-store-opening/retail_nso_dubaimall_full.jpg.large_2x.jpg);">
+        </div>
     </div>-->
 
 
@@ -53,14 +61,17 @@
 
 
             <!-- La sidenav -->
-            <div class="uk-width-1-4@m">
+            <div class="uk-width-1-5@m">
                 <div class="tm-sidebar-left uk-visible@l">
-                    <div uk-sticky="offset: 140" class="uk-sticky uk-sticky-fixed uk-active" style="position: fixed; top: 140px; width: 200px;">
+                    <div uk-sticky="offset: 140" class="uk-sticky uk-sticky-fixed uk-active" style="position: fixed; top: 440px; width: 200px;">
                         <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 120" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
                             <p class="uk-text-lead">Navigation</p>
                             <li class="uk-active"><a href="#outils">Outils</a></li>
-                            <li class="uk-active"><a href="#avant-propos">Avant-propos</a></li>
+                            <!--<li class=""><a href="#avant-propos">Avant-propos</a></li>-->
+                            <li class=""><a href="#setup">Setup d'un projet</a></li>
+                            <li class=""><a href="#setup-uikit">Setup UIKit</a></li>
                             <li class=""><a href="#prochaines-etapes">Prochaines étapes</a></li>
+                            <li class=""><a href="#dernier-projet">Dernier projet</a></li>
                         </ul>
                     </div>
                     <div class="uk-sticky-placeholder" style="height: 387px; margin: 0px;"></div>
@@ -73,7 +84,7 @@
 
 
                 <!-- La section Outils -->
-                <h1 class="uk-text-large uk-heading-divider" id="outils">Outils</h1>
+                <h1 class="uk-text-large" id="outils">Outils</h1>
                 <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-padding-medium-bottom" uk-grid>
                     <div>
                         <a href="http://brackets.io" target="_blank">
@@ -98,14 +109,63 @@
                 </div>
 
 
-                <!-- La section Avant-propos-->
-                <h1 class="uk-text-large uk-heading-divider" id="avant-propos">Avant-propos</h1>
-                <div class="uk-padding-medium-bottom">Cette plateforme a pour but de rassembler en un point central tous les liens et toutes les ressources nécessaire à l'introduction au développement, en couvrant plusieurs language et outils. Elle est basée sur le style appliqué au site d'Apple et dédié aux développeurs.</div>
+                <!-- La section Avant-propos
+                <h1 class="uk-text-large" id="avant-propos">Avant-propos</h1>
+                <div class="uk-padding-medium-bottom">Cette plateforme a pour but de rassembler en un point central tous les liens et toutes les ressources nécessaire à l'introduction au développement, en couvrant plusieurs language et outils. Elle est basée sur le style appliqué au site d'Apple et dédié aux développeurs.</div> -->
+
+
+                <!-- La section Setup d'un rojet-->
+                <h1 class="uk-text-large" id="setup">Setup d'un projet</h1>
+                <dl class="uk-description-list uk-padding-medium-bottom">
+                    <dt>1. Installer Brackets</dt>
+                    <dd>Extension importantes: Beautify, Git, Icon, Indent guides, Minifier, Php Syntax Hints.</dd>
+                    <dd>Thème: Brackets Dark.</dd>
+                    <dt>2. Installer Git</dt>
+                    <dd>Télécharger sur: http://git-scm.com/downloads</dd>
+                    <dd>Setup avec identifiant et mot de passe Github</dd>
+                    <dt>3. Créer un repository sur Github</dt>
+                    <dd>Suivre
+                        <a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/">ce lien</a>
+                    </dd>
+                    <dt>4. Installer et démarrer MAMP</dt>
+                    <dd>Ne pas oublier de choisir le dossier contenant les projets à ouvrir via Préférences > Web Server dans MAMP.</dd>
+                    <dt>5. Télécharger UIkit</dt>
+                    <dd>UIKit est un framework CSS. Suivre
+                        <a href="https://getuikit.com">ce lien</a>
+                    </dd>
+                    <dt>5. Sauvegarder un premier fichier index.html ou index.php</dt>
+                    <dd>Commnencer à coder</dd>
+                    <dt>6. Faire un premier commit, puis push avec l'extension Git</dt>
+                    <dd>Vérifier que tout se synchronise</dd>
+                </dl>
+
+
+                <!-- La section Setup UIKit-->
+                <h1 class="uk-text-large" id="setup-uikit">Setup UIKit</h1>
+                <div class="uk-padding-medium-bottom">
+                    <pre><code>// Setup UIKit
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title>MyDashboard - Accueil&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;link rel="stylesheet" href="css/uikit.min.css" /&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/uikit.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/uikit-icons.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </div>
 
 
                 <!-- La section Prochaines étapes -->
-                <h1 class="uk-text-large uk-heading-divider" id="prochaines-etapes">Prochaines étapes</h1>
-                <table class="uk-table uk-table-hover uk-table-middle">
+                <h1 class="uk-text-large" id="prochaines-etapes">Prochaines étapes</h1>
+                <table class="uk-table uk-table-hover uk-table-middle uk-padding-medium-bottom">
                     <thead>
                         <tr>
                             <th class="uk-table-small">Sujet</th>
@@ -190,6 +250,24 @@
                     </tbody>
                 </table>
 
+
+                <!-- La section Dernier Projet-->
+                <h1 class="uk-text-large" id="dernier-projet">Dernier projet</h1>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="images/Capture%20d%E2%80%99%C3%A9cran%202017-04-30%20%C3%A0%2018.05.38.png" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Vaito</h3>
+                                <p>Réinterprétation de Twitter avec espace membre et gestion des tweets.Démarrer MAMP pour accéder au projet.</p>
+                                <a href="http://localhost:8888/Twitta/connection.php" class="uk-button uk-button-vaito">Accéder au projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>

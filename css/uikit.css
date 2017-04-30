@@ -36,9 +36,13 @@ body {
 
 /* Sidebar */
 
+.uk-nav-default>li>a {
+    font-size: 1rem;
+}
+
 .tm-nav>li.uk-active>a {
-    color: #333 !important;
-    font-weight: 400;
+    color: black !important;
+    font-weight: 600;
 }
 
 
@@ -1074,11 +1078,17 @@ a.uk-link-reset:focus,
  * Term
  */
 
+.uk-description-list {
+    padding-left: 20px;
+    /*text-transform: uppercase;*/
+}
+
 .uk-description-list>dt {
     color: #333;
-    font-size: 0.875rem;
-    font-weight: normal;
-    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    /*text-transform: uppercase;*/
 }
 
 .uk-description-list>dt:nth-child(n+2) {
@@ -2367,6 +2377,35 @@ select.uk-form-width-xsmall {
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
     background-color: #0e6dcd;
+    color: #fff;
+}
+
+
+/*
+* Vaito
+*/
+
+.uk-button-vaito {
+    background-color: lightskyblue;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+
+/* Hover + Focus */
+
+.uk-button-vaito:hover,
+.uk-button-vaito:focus {
+    background-color: #67bff5;
+    color: #fff;
+}
+
+
+/* OnClick + Active */
+
+.uk-button-vaito:active,
+.uk-button-vaito.uk-active {
+    background-color: #67bff5;
     color: #fff;
 }
 
@@ -5191,7 +5230,8 @@ ul.uk-nav-sub {
 /* Active */
 
 .uk-navbar-nav>li.uk-active>a {
-    color: #777;
+    color: #000;
+    font-weight: 600;
 }
 
 
