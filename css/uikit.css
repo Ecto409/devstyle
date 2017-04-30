@@ -54,6 +54,21 @@ body {
 }
 
 
+/* Texte spécial */
+
+.uk-text-special {
+    color: #000;
+}
+
+
+/* Texte sur image avec ombre */
+
+.uk-text-shadow {
+    color: #000;
+    text-shadow: 0px 1px 5px rgba(100, 100, 100, 0.5);
+}
+
+
 /* Links
  ========================================================================== */
 
