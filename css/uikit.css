@@ -1275,7 +1275,7 @@ a.uk-link-reset:focus,
 
 .uk-table-hover>tr:hover,
 .uk-table-hover tbody tr:hover {
-    background: #ffd;
+    background: rgba(56, 226, 182, 0.2);
 }
 
 
@@ -9630,7 +9630,7 @@ td.uk-text-break {
 }
 
 .uk-background-muted {
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
 }
 
 .uk-background-primary {
@@ -11195,6 +11195,17 @@ td.uk-text-break {
 
 .uk-margin-large-right {
     margin-right: 40px !important;
+}
+
+
+/* Padding extralarge */
+
+.uk-padding-extralarge-top {
+    padding-top: 124px !important;
+}
+
+.uk-padding-extralarge-bottom {
+    padding-bottom: 124px !important;
 }
 
 
