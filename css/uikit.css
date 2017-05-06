@@ -722,6 +722,7 @@ a.uk-link-reset:focus,
 .uk-heading-primary {
     font-size: 2rem;
     line-height: 1.2;
+    color: #333;
 }
 
 
@@ -731,6 +732,7 @@ a.uk-link-reset:focus,
     .uk-heading-primary {
         font-size: 3rem;
         line-height: 1.1;
+        color: #333;
     }
 }
 
