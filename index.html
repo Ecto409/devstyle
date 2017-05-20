@@ -69,6 +69,7 @@
                             <!--<li class=""><a href="#avant-propos">Avant-propos</a></li>-->
                             <li class=""><a href="#setup">Setup d'un projet</a></li>
                             <li class=""><a href="#setup-uikit">Setup UIKit</a></li>
+                            <li class=""><a href="#setup-bdd">Setup BDD</a></li>
                             <li class=""><a href="#prochaines-etapes">Prochaines étapes</a></li>
                             <li class=""><a href="#dernier-projet">Dernier projet</a></li>
                         </ul>
@@ -128,6 +129,7 @@
                     </dd>
                     <dt>4. Installer et démarrer MAMP</dt>
                     <dd>Ne pas oublier de choisir le dossier contenant les projets à ouvrir via Préférences > Web Server dans MAMP.</dd>
+                    <dd>Ne pas oublier de permettre l'affichage des erreurs en php via <a href="https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql/configurer-php-pour-visualiser-les-erreurs">ce lien</a></dd>
                     <dt>5. Télécharger UIkit</dt>
                     <dd>UIKit est un framework CSS. Suivre
                         <a href="https://getuikit.com">ce lien</a>
@@ -161,6 +163,16 @@
 </code></pre>
                 </div>
 
+
+                <!-- La section Setup BDD-->
+                <h1 class="uk-text-large" id="setup-bdd">Setup BDD</h1>
+                <div class="uk-padding-medium-bottom">
+                    <pre><code>// Setup Bdd
+&lt;?php
+$bdd = new PDO('mysql:host=localhost;dbname=NomdelaDB', 'root','root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+?&gt;
+</code></pre>
+                </div>
 
                 <!-- La section Prochaines étapes -->
                 <h1 class="uk-text-large" id="prochaines-etapes">Prochaines étapes</h1>
